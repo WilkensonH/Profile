@@ -1,0 +1,30 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+} 
+body{
+    background-image:url(/img/bg.png);
+}
+/* header opacity */
+.bg-dark{       
+   opacity: .9; 
+}
+nav a:hover{
+    border-bottom:1px solid #dc143c;
+    border-top: 2px solid #dc143c;
+}
+.site-project{
+    transform: rotate(-90deg);
+}
+.text-hover:hover{
+    border-bottom:1px solid #dc143c;
+}
+ 
+ 
+.footer{
+    margin-top: 5em;
+}
+ 
+ 
