@@ -1,30 +1,58 @@
-
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-} 
-body{
-    background-image:url(/img/bg.png);
 }
+
+body {
+    background-image: url(/img/bg.png);
+}
+
 /* header opacity */
-.bg-dark{       
-   opacity: .9; 
+
+.bg-dark {
+    opacity: .9;
 }
-nav a:hover{
-    border-bottom:1px solid #dc143c;
+
+nav a:hover {
+    border-bottom: 1px solid #dc143c;
     border-top: 2px solid #dc143c;
 }
-.site-project{
-    transform: rotate(-90deg);
+
+.text-hover:hover {
+    border-bottom: 1px solid #dc143c;
 }
-.text-hover:hover{
-    border-bottom:1px solid #dc143c;
+
+.site-pro {
+    margin-left: 40%;
+    transform: rotate(0deg);
 }
- 
- 
-.footer{
-    margin-top: 5em;
+
+.footer {
+    margin-top: 8em;
 }
- 
- 
+
+.text-stroke {
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #000000;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+.text-strk {
+    color: #000000;
+}
+
+.projects {
+    margin-top:1%;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+} 
+.container-flie{
+    position: relative;
+    text-align: center;    
+}
+.ml-file{
+    margin-left: 25%;
+
+}
