@@ -5,7 +5,8 @@
 }
 
 body {
-    background-image: url(/img/bg.png);
+    background-image: url(../img/bg.png);
+    width: 100%;
 }
 
 /* header opacity */
@@ -29,7 +30,7 @@ nav a:hover {
 }
 
 .footer {
-    margin-top: 8em;
+    margin-top: 5em;
 }
 
 .text-stroke {
@@ -55,4 +56,15 @@ nav a:hover {
 .ml-file{
     margin-left: 25%;
 
+}
+.ml-c{
+     margin:auto;
+}
+.btn-c{
+    border: 1px solid #dc143c;
+    margin: 10px;
+}
+.btn-mc{
+    margin-top: 0;
+    margin-left: 35%;
 }
