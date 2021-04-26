@@ -61,10 +61,12 @@ nav a:hover {
      margin:auto;
 }
 .btn-c{
-    border-bottom: 1px solid #dc143c;
-    margin: 10px;
+    border-bottom: 1px solid #dc143c;    
 }
 .btn-mc{
     margin-top: 0;
     margin-left: 35%;
+}
+.footer{
+    margin-top: 17%;
 }
