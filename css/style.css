@@ -61,7 +61,7 @@ nav a:hover {
      margin:auto;
 }
 .btn-c{
-    border: 1px solid #dc143c;
+    border-bottom: 1px solid #dc143c;
     margin: 10px;
 }
 .btn-mc{
