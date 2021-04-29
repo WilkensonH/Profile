@@ -9,37 +9,43 @@
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="node_modules/font-awesome/fonts/fontawesome-webfont.svg">
+    <link rel="stylesheet" href="node_modules/swup/dist/swup.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/swup/2.0.14/swup.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/swup/2.0.14/swup.js">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/bg.png">
     <title>Wilkenson</title>
 </head>
 
-<body class=>
-    <section class=" bg-dark border-bottom border-primary">
-        <header class=" container">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand text-primary font-weight-bold btn" href="index.html">Wilkenson Hilarion.</a>
-                <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse " id="navbarNavDropdown">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link text-primary pr-5" href="index.html">Home
-                        </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white pr-5" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white pr-5 mr-5" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-    </section>
+<body>
+    
+        <section class=" bg-dark border-bottom border-primary">
+            <header class=" container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand text-primary font-weight-bold btn" href="index.html">Wilkenson Hilarion.</a>
+                    <button class="navbar-toggler " type="button" data-toggle="collapse"
+                        data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarNavDropdown">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link text-primary pr-5" href="index.html">Home
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white pr-5" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white pr-5 mr-5" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+        </section>
+    
     <section>
         <!-- resumme -->
         <div class="container mb-5 mt-5">
@@ -62,21 +68,21 @@
         </div>
         </div>
         <!-- intro -->
-        <div class=" container text-primary font-weight-bold">
-            <div class="row">
-                <div class="mb-5 col mt-5">
+        <div id="swup" class=" transition-main container text-primary font-weight-bold">
+           <div class="row">
+                <div class="mb-5 col mt-5 transition-intro ">
                     <h1 id="wil" class="text-hover text-stroke mb-2"> I'm<br> Wilkenson.</h1>
-                    <span id="fswd" class="font-weight-bold text-hover pl-0 col-3 text-strk">
+                    <span id="fswd" class="font-weight-bold pl-0 col-3 text-strk">
                         <h5>Full Stack Web Developer. & Computer Science Student.</h5>
                     </span>
                 </div>
-                <div id="folder" class="col ml-file container-file ">
-                    <a href="project.html" class="file-folder">
-                        <img src="img/folder.png" width="300" alt="">
+                <div class="col ml-file container-file file-folder">
+                    <a href="project.html" class="">
+                        <img src="img/folder.png" width="300" alt="" class="folder">
                     </a>
-                    <div id="project">
+                    <div class="project">
                         <a href="project.html"
-                            class="btn-c mr-5 text-hover text-white text-center font-weight-bold shadow btn  btn-dark text-white ml-5 projects">
+                            class="project-btn btn-c mr-5 text-hover text-white text-center font-weight-bold shadow btn  btn-dark text-white ml-5 projects">
                             <i class="bi bi-card-heading bg-primary"></i> Projects
                         </a>
                     </div>
@@ -92,8 +98,6 @@
         </footer>
     </section>
 
-
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
         </script>
@@ -102,7 +106,11 @@
         </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
-        </script>
+     </script>
+ 
+    <script>
+        const swup = new Swup()
+    </script>
 </body>
 
 </html>
