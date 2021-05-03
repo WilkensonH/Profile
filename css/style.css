@@ -100,7 +100,23 @@ nav a:hover {
     transition: ease-in-out .4s;
     z-index: 100;
 }
-.file-folder .text-hover:hover{
+
+.file-folder .text-hover:hover {
     transform: translateX(-20px);
     transition: ease-in-out .2s;
+}
+.about-project{
+    
+    position: relative;
+    top: 20px;
+    z-index: 2;    
+}
+.about-project:hover{
+    background: #262626;
+    color: #ffffff;     
+}
+#project_1 ,#project_2{
+    position: absolute;
+     top: -300px;
+     z-index: 1;
 }

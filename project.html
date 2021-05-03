@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <section class=" bg-dark border-bottom border-primary">
+    <section class="sticky-top bg-dark border-bottom border-primary">
         <header class=" container">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand text-primary font-weight-bold btn" href="index.html">Wilkenson Hilarion.</a>
@@ -43,10 +43,10 @@
     <section>
         <!-- social prile resume -->
         <div class="container-fluid mb-5 mt-2">
-            <div class="row">
-                <div class="col pb-2 ">
+            <div class=" row">
+                <div class="col pb-2">
                     <a href=""
-                        class="btn-c mr-5 text-hover text-white text-center font-weight-bold shadow btn  btn-dark rounded-pill text-white">
+                        class=" btn-c mr-5 text-hover text-white text-center font-weight-bold shadow btn  btn-dark rounded-pill text-white">
                         <i class="bi bi-file-earmark-person bg-primary"></i> Resumee
                     </a>
                 </div>
@@ -71,7 +71,19 @@
                             <img src="img/project1.png" class="card-img-top" alt="project">
                             <div class="card-body">
                                 <p class="card-text">
-                                    <a href="">About</a>
+                                    <a class="about-project btn font-weight-bold rounded-pill" data-toggle="collapse" data-target="#project_1">About</a>
+                                <div class="card">
+                                    <div class="card-body shadow-lg collapse bg-primary text-white" id="project_1">
+                                        <P>
+                                            <h5>About this project</h5>
+                                            Restaurant application
+                                            built using HTML Bootstrap CSS.
+                                            users are able to add to cart and 
+                                            make payment all in one page.
+                                             
+                                        </P>
+                                    </div>
+                                </div>
                                 </p>
                                 <a href="#" class="btn-c btn btn-primary bg-dark rounded-pill col-6"><i
                                         class="bi bi-github"></i>View Code</a>
@@ -88,7 +100,19 @@
                             <img src="img/project1.png" class="card-img-top" alt="project">
                             <div class="card-body">
                                 <p class="card-text">
-                                    <a href="">About</a>
+                                    <a class="about-project btn font-weight-bold rounded-pill" data-toggle="collapse" data-target="#project_2">About</a>
+                                    <div class="card">
+                                        <div class="card-body shadow-lg collapse bg-primary text-white" id="project_2">
+                                            <P>
+                                                <h5>About this project</h5>
+                                                Restaurant application
+                                                built using HTML Bootstrap CSS.
+                                                users are able to add to cart and 
+                                                make payment all in one page.
+                                                 
+                                            </P>
+                                        </div>
+                                    </div>
                                 </p>
                                 <a href="#" class="btn-c btn btn-primary bg-dark rounded-pill col-6"><i
                                         class="bi bi-github"></i>View Code</a>
@@ -153,4 +177,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
         </script>
+        <script src="script/script.js"></script>
 </body>
