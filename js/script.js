@@ -1,9 +1,9 @@
-var form = document.getElementById("form");
+const form = document.getElementById("form");
 
 async function handleSubmit(event) {
   event.preventDefault();
-    var status = document.getElementById("status");
-  var data = new FormData(event.target);
+  const status = document.getElementById("status");
+  const data = new FormData(event.target);
   fetch(event.target.action, {
     method: form.method,
     body: data,
@@ -12,14 +12,13 @@ async function handleSubmit(event) {
     },
   })
     .then((response) => {
-        status.innerHTML = "Thanks for your submission!";
-        status.classList.add("success");
-        form.reset();
+      status.innerHTML = " Successful, Thank you for contacting me!";
+      status.classList.add("success");
+      form.reset();
     })
     .catch((error) => {
-        status.innerHTML = "Oops! There was a problem submitting your form";
-        status.classList.add("error");
+      status.innerHTML = "Oops! There was a problem submitting your form";
+      status.classList.add("error");
     });
 }
 form.addEventListener("submit", handleSubmit);
- 
