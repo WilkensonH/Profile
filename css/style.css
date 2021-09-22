@@ -156,7 +156,7 @@ body {
  
 /* animate text*/
 .transition-slide {
-  animation: slidein 1.2s  ease-in;
+  animation: slidein 1s  ease-in;
   animation-iteration-count: 1;
 }
 
