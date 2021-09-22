@@ -7,7 +7,11 @@
 a {
   text-decoration: none;
 }
-
+/* .in{
+  width: 10px;
+  height: 10px;
+  background-color: red;
+} */
 body {
   background: #eee;
 } 
@@ -53,11 +57,11 @@ body {
   margin-left: 25%;
 }
 
-.ml-c {
+.ml-c { 
   margin: auto;
 }
 
-.btn-c {
+.btn-c {  
   border-bottom: 1px solid #dc143c;
 }
 
