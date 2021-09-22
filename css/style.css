@@ -7,14 +7,15 @@
 a {
   text-decoration: none;
 }
-/* .in{
-  width: 10px;
-  height: 10px;
-  background-color: red;
-} */
+
+
 body {
   background: #eee;
 } 
+
+.card-project:hover,.card-body:hover {
+  display:block;
+}
 /* header opacity */
 .bg-dark {
   opacity: 0.9;
@@ -71,17 +72,12 @@ body {
 }
 /* end */
 
-.footer {
-  /* margin-top: 17%; */
-}
 .bg-footer {
   background-color: #262626;
 }
 
 .p-hover:hover {
-  border: none;
-  /* border-left: #dc143c solid ;
-    border-top: #dc143c solid ; */
+  border: none; 
   box-shadow: 1px 1px 5px 1px #ec1f1f;
   background: linear-gradient(#ec1f1f, #acf3be, #bfacf3);
   transform: translate(-10px);
@@ -235,9 +231,3 @@ body {
   }
 }
 
-#project_1,
-#project_2 {
-  position: absolute;
-  top: -300px;
-  z-index: 1;
-}
