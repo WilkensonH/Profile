@@ -21,6 +21,7 @@ body {
 .card-project:hover,.card-body:hover {
   display:block;
 }
+
 /* header opacity */
 .bg-dark {
   opacity: 0.9;
@@ -174,6 +175,8 @@ body {
   }
 }
 
+ 
+ 
 /* slide up contact form */
 .transition-up {
   animation: slideup 2s;
