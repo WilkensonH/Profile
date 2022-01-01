@@ -15,7 +15,7 @@ body {
 }
 /* nav header */
 .bg-dark {
-  opacity: 0.9;
+  opacity: 0.6;
   margin: auto;
 }
 .text-stroke {
@@ -95,6 +95,13 @@ body {
 /* Animate skills */
 
 /* form */
+.c-name,
+.c-email,
+.c-phone,
+.c-textarea {
+  font-weight: bold;
+  font-size: 25px;
+}
 #status {
   width: 100%;
   text-align: center;
@@ -128,7 +135,10 @@ body {
 }
 
 .bg-form {
-  background-color: #262626;
+  /* background-color: #262626; */
+
+  /* background-color: #f602d510 */
+  background: linear-gradient(#01afb866, #f602d510);
 }
 .inTouch:hover {
   text-decoration: none;
