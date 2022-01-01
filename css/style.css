@@ -8,7 +8,7 @@ a {
   font-size: 20px;
 }
 body {
-  background: linear-gradient(#01afb8, #f602d566, #0088ff);
+  background: linear-gradient(#01afb8, #f602d566, #01afb890);
 }
 .card-project:hover,
 .card-body:hover {
@@ -201,7 +201,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 50vh;
+  min-height: 60vh;
 }
 .copy {
   color: #000;
