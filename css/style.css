@@ -31,7 +31,6 @@ body {
   -webkit-text-stroke-color: #000000;
   text-shadow: 2px 2px 2px #000000;
 }
-
 .text-strk {
   color: #000000;
 }
@@ -39,8 +38,8 @@ body {
 .projects {
   margin-top: 1%;
   position: absolute;
-  top: 25%;
-  left: 20%;
+  top: 30%;
+  left: 30%;
 }
 
 .container-file {
@@ -174,7 +173,7 @@ body {
 }
 .box span {
   position: absolute;
-  top: -100px;
+  top: -200px;
   left: 0;
   width: 100%;
   height: 100%;
@@ -191,7 +190,7 @@ body {
   width: 100%;
   object-fit: cover;
   opacity: 0.8;
-  height: 20vh;
+  height: 30vh;
 }
 .box-footer p {
   color: #fff;
@@ -203,9 +202,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 60vh;
+  min-height: 50vh;
 }
 .copy {
   color: #fff;
   text-align: center;
+  padding-bottom: 20px;
 }
