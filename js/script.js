@@ -1,4 +1,4 @@
-const form = document.getElementById("form"); 
+const form = document.getElementById("form");
 
 async function handleSubmit(event) {
   event.preventDefault();

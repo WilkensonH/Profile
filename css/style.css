@@ -3,40 +3,21 @@
   padding: 0;
   margin: 0;
 }
-
 a {
   text-decoration: none;
 }
-
-.inTouch:hover{
-  text-decoration: none;
-  border-bottom: 1px solid #fff;
-}
-
-
 body {
-  background: #eee;
-} 
-
-.card-project:hover,.card-body:hover {
-  display:block;
+  background: linear-gradient(#01afb8, #f602d566, #0088ff);
 }
-
-/* header opacity */
+.card-project:hover,
+.card-body:hover {
+  display: block;
+}
+/* nav header */
 .bg-dark {
   opacity: 0.9;
   margin: auto;
 }
-
-.site-pro {
-  margin-left: 40%;
-  transform: rotate(0deg);
-}
-
-.footer {
-  margin-top: 6em;
-}
-
 .text-stroke {
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: #000000;
@@ -46,7 +27,7 @@ body {
 .text-strk {
   color: #000000;
 }
-/* home page project folder */
+/* home  */
 .projects {
   margin-top: 1%;
   position: absolute;
@@ -64,26 +45,20 @@ body {
   margin-left: 25%;
 }
 
-.ml-c { 
-  margin: auto;
+.btn-c {
+  border-bottom: 2px solid #dc143c;
 }
-
-.btn-c {  
-  border-bottom: 1px solid #dc143c;
+.btn-c:hover {
+  border-bottom: 2px solid #fff;
 }
 
 .btn-mc {
   margin-top: 0;
   margin-left: 35%;
 }
-/* end */
-
-.bg-footer {
-  background-color: #262626;
-}
 
 .p-hover:hover {
-  border: none; 
+  border: none;
   box-shadow: 1px 1px 5px 1px #ec1f1f;
   background: linear-gradient(#ec1f1f, #acf3be, #bfacf3);
   transform: translate(-10px);
@@ -114,99 +89,12 @@ body {
   background: #262626;
   color: #ffffff;
 }
+.project__fotter {
+  color: #fff;
+}
 /* Animate skills */
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 60vh;
-  background: #262626;
-}
 
-/* skills animation in footer */
-.box {
-  position: relative;
-  width: 250px;
-  transform-style: preserve-3d;
-  animation: animate 20s linear infinite;
-}
-@keyframes animate {
-  0% {
-    transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
-  }
-  100% {
-    transform: perspective(1000px) rotateY(360deg) rotateX(0deg);
-  }
-}
-.box span {
-  position: absolute;
-  top: -100px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform-origin: center;
-  transform-style: preserve-3d;
-  transform: rotateY(calc(var(--i) * 45deg)) translateZ(300px);
-}
-.box img {
-  /* transform:rotateX(180deg); */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  /* height: 100%;  */
-  object-fit: cover;
-  opacity: 0.8;
-  height: 20vh;
-}
- 
-/* animate text*/
-.transition-slide {
-  animation: slidein 1s  ease-in;
-  animation-iteration-count: 1;
-}
-
-@keyframes slidein {
-  from {
-    margin-right: -100%;
-  }
-  to {
-    margin-right: 0%;
-  }
-}
-
- 
- 
-/* slide up contact form */
-.transition-up {
-  animation: slideup 2s;
-  animation-iteration-count: 1;
-}
-
-@keyframes slideup {
-  0% {
-    margin-top: 100%;
-  }
-  100% {
-    margin-top: 0%;
-  }
-}
-
-/* animate project folder */
-.transition-rotate {
-  animation: rotate 2s;
-  animation-iteration-count: 1;
-}
-@keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-/* contact page skills animation */
-
+/* form */
 #status {
   width: 100%;
   text-align: center;
@@ -239,4 +127,74 @@ body {
   }
 }
 
+.bg-form {
+  background-color: #262626;
+}
+.inTouch:hover {
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+  background: #fff;
+}
+/* footer */
+.footer {
+  margin-top: 6em;
+}
+.p-footer {
+  margin-top: 6em;
+}
 
+/* skills animation in footer */
+.box {
+  position: relative;
+  width: 250px;
+  transform-style: preserve-3d;
+  animation: animate 20s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(360deg) rotateX(0deg);
+  }
+}
+.box span {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(300px);
+}
+
+.box img {
+  /* transform:rotateX(180deg); */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* height: 100%;  */
+  object-fit: cover;
+  opacity: 0.8;
+  height: 20vh;
+}
+.box-footer p {
+  color: #fff;
+}
+.box-footer {
+  width: 250px;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  /* background: #262626; */
+}
+.copy {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 20px;
+}
