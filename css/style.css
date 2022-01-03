@@ -5,7 +5,6 @@
 }
 a {
   text-decoration: none;
-  font-size: 20px;
 }
 body {
   background: linear-gradient(#01afb8, #f602d566, #01afb890);
@@ -15,8 +14,11 @@ body {
   display: block;
 }
 /* nav header */
-.logo {
-  font-size: 20px;
+.nav-active {
+  border-bottom: solid 2px #00000080;
+}
+.nav-active:hover {
+  border-bottom: solid 2px #22222280;
 }
 .bg-dark {
   opacity: 1;
@@ -41,13 +43,16 @@ body {
   top: 30%;
   left: 30%;
 }
+.text-black {
+  color: #000;
+}
 /*  about*/
 .about-text {
   font-size: 20px;
 }
 
 .typing {
-  letter-spacing: 2em;
+  letter-spacing: 1em;
   font-size: 25px;
   color: #fff;
   overflow: hidden;
@@ -78,7 +83,7 @@ body {
 }
 
 .btn-c {
-  border-bottom: 2px solid #dc143c;
+  border-bottom: 2px solid #f602d5;
 }
 .btn-c:hover {
   border-bottom: 2px solid #fff;
