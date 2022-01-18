@@ -1,6 +1,5 @@
 import { data } from '../data/data.js';
 
-const btnContainer = document.querySelector('.btnContainer');
 const projects = document.querySelector('.allProjects');
 
 renderProjects();
@@ -27,7 +26,6 @@ function renderProjects() {
         </a>
       </div>   
   `;
-
-    projects.innerHTML += html;
+    projects.insertAdjacentHTML('beforeend', html);
   });
 }
