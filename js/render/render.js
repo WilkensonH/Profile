@@ -1,24 +1,29 @@
-import { data } from '../data/data.js';
+ import {
+   works,
+   skills
+ } from '../data/data.js';
 
-const projects = document.querySelector('.allProjects');
+ const technologies = document.querySelector('.technologies');
+ const projects = document.querySelector('.allProjects');
 
-renderProjects();
+ showProjects()
+ showSkills()
 
-function renderProjects() {
-  data.map(function (data) {
-    const html = `         
+ function showProjects() {
+   works.map(function (work) {
+     const html = `         
       <div class="mb-1 mx-auto p-height card-project">
-        <a href="${data.URL}" target="_blank">
+        <a href="${work.url}" target="_blank">
           <div class="card mr-1 p-hover" style="width: 18rem;">
-            <img src="img/project${data.id}.png" class="card-img-top" alt="project"/>
+            <img src="img/project${work.id}.png" class="card-img-top" alt="project"/>
           <div class="card-body ">
           <p class="card-text text-dark d-flex justify-content-center pb-1">
-            ${data.LANG}          
+            ${work.description}          
           </p>
-          <a href="${data.LINK}" target="_blank" class="btn-c btn btn-primary bg-dark rounded-pill col-6"><i
+          <a href="${work.link}" target="_blank" class="btn-c btn btn-primary bg-dark rounded-pill col-6"><i
             class="bi bi-github"></i>View Code
           </a>
-          <a href="${data.URL}" target="_blank" 
+          <a href="${work.url}" target="_blank" 
                 class="btn-c btn btn-primary bg-dark rounded-pill">
                 <i class="bi bi-eye"></i>
                 Live View
@@ -26,6 +31,15 @@ function renderProjects() {
         </a>
       </div>   
   `;
-    projects.insertAdjacentHTML('beforeend', html);
-  });
-}
+     projects.insertAdjacentHTML('beforeend', html);
+   });
+ }
+
+ function showSkills() {
+   skills.map(function (work) {
+     const html = `         
+      <span>${work}</span>   
+  `;
+     technologies.insertAdjacentHTML('beforeend', html);
+   });
+ }

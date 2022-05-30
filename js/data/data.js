@@ -1,30 +1,44 @@
-export const data = [
-  {
+// projects and skills informaion
+//
+export const skills = ['HTML', 'CSS', 'JavaScript', 'React', 'React-native']
+
+export const works = [{
     id: 4,
-    URL: 'https://wilkensonh.github.io/Guessing/',
-    LINK: 'https://github.com/WilkensonH/Guessing.git',
-    LANG: 'number Guessing game with javaScript',
-    type: 'js',
+    url: 'https://wilkensonh.github.io/Guessing/',
+    link: 'https://github.com/WilkensonH/Guessing.git',
+    description: 'number Guessing game with javaScript',
+    lang: "JavaScript",
+
   },
   {
     id: 3,
-    URL: 'https://wilkensonh.github.io/dicegame/',
-    LINK: 'https://github.com/WilkensonH/dicegame.git',
-    LANG: 'dice game with javaScript ',
-    type: 'js',
+    url: 'https://wilkensonh.github.io/dicegame/',
+    link: 'https://github.com/WilkensonH/dicegame.git',
+    description: 'dice game with javaScript ',
+    lang: "JavaScript",
+
   },
   {
     id: 2,
-    URL: 'https://bit.ly/3DKA81S',
-    LINK: 'https://github.com/WilkensonH/commerce.git',
-    LANG: ' React,Material-UI, commerce.js ',
-    type: 'react',
+    url: 'https://bit.ly/3DKA81S',
+    link: 'https://github.com/WilkensonH/commerce.git',
+    description: ' React,Material-UI, commerce.js ',
+    lang: "JavaScript",
+
   },
   {
     id: 1,
-    URL: 'https://wilkensonh.github.io/restaurant_app/',
-    LINK: 'https://github.com/WilkensonH/restaurant_app/',
-    LANG: ' HTML Bootstrap',
-    type: 'css',
+    url: 'https://wilkensonh.github.io/restaurant_app/',
+    link: 'https://github.com/WilkensonH/restaurant_app/',
+    description: ' HTML Bootstrap',
+    lang: "JavaScript",
+
   },
 ];
+
+// export const techUsed = [{
+//   id: 1,
+//   html:"HTML"
+//   css,
+//   js
+// }]

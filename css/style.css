@@ -3,20 +3,136 @@
   padding: 0;
   margin: 0;
 }
+
 a {
   text-decoration: none;
 }
+
 body {
-  background: linear-gradient(#01afb8, #f602d566, #01afb890);
+  background-color: #202020;
 }
+#resume {
+  position: relative;
+  top: 0;
+  right: 0;
+}
+.side-resume {
+  position: fixed;
+  right: -25px;
+  z-index: 100;
+  transform: rotate(90deg);
+}
+/* Header start */
+#headerStyles {
+  background-color: #202020;
+  /* top: 0; */
+}
+/* Header end */
+
+/* main start */
+main .my-work .form-contact {
+  width: 100%;
+  height: 90vh;
+}
+.about-section {
+  height: 100vh;
+}
+.about-img img {
+  width: auto;
+  height: 150px;
+}
+.about-img {
+  display: flex;
+  overflow: hidden;
+}
+.about-img img {
+  animation-name: slide-animation;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  display: fl;
+  overflow: hidden;
+}
+@keyframes slide-animation {
+  from {
+    margin-left: -430px;
+  }
+  to {
+    margin-right: 0%;
+  }
+}
+/* hand waving  */
+.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(16deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+#myInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+/* social button  */
+.btn-border-bottom {
+  border-bottom: 2px solid #33f702;
+}
+
+.btn-border-bottom:hover {
+  border-bottom: 2px solid #fff;
+}
+
+/* man end  */
+/* work */
+#workSection {
+  height: 100vh;
+}
+/* work end  */
+
+/* main end */
+
+/* contact */
+#contact {
+  height: 70vh;
+}
+/* contact end   */
 .card-project:hover,
 .card-body:hover {
   display: block;
 }
+
 /* nav header */
 .nav-active {
   border-bottom: solid 2px #00000080;
 }
+
 .nav-active:hover {
   border-bottom: solid 2px #22222280;
 }
@@ -25,18 +141,17 @@ body {
   opacity: 1;
   margin: auto;
 }
-.bg-header-container {
-  background: #01afb8;
-  border: none;
-}
+
 .text-stroke {
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: #ffffff;
   text-shadow: 1px 1px 1px #000000;
 }
+
 .text-strk {
   color: #000000;
 }
+
 /* home  */
 .projects {
   margin-top: 1%;
@@ -44,9 +159,11 @@ body {
   top: 30%;
   left: 30%;
 }
+
 .text-black {
   color: #000;
 }
+
 /*  about*/
 .about-text {
   font-size: 20px;
@@ -61,14 +178,17 @@ body {
   margin: 0 auto;
   animation: typing 5.1s steps(50, end) infinite;
 }
+
 .skills {
   padding: auto;
   padding-top: 2px;
 }
+
 @keyframes typing {
   from {
     width: 0;
   }
+
   to {
     width: 100%;
   }
@@ -82,19 +202,9 @@ body {
 .ml-file {
   margin-left: 25%;
 }
-
-.btn-c {
-  border-bottom: 2px solid #f602d5;
+.form-text-color {
+  color: #000;
 }
-.btn-c:hover {
-  border-bottom: 2px solid #fff;
-}
-
-.btn-mc {
-  margin-top: 0;
-  margin-left: 35%;
-}
-
 .p-hover:hover {
   border: none;
   box-shadow: 1px 1px 5px 1px #ec1f1f;
@@ -118,20 +228,23 @@ body {
   transform: translateX(-20px);
   transition: ease-in-out 0.2s;
 }
+
 .about-project:hover {
   position: relative;
   top: 20px;
   z-index: 2;
 }
+
 .about-project:hover {
   background: #262626;
   color: #ffffff;
 }
+
 .project__fotter {
   color: #fff;
 }
 
-/* form */
+/* Form start */
 .c-name,
 .c-email,
 .c-phone,
@@ -140,10 +253,12 @@ body {
   font-size: 20px;
   color: #fff;
 }
+
 #status {
   width: 100%;
   text-align: center;
 }
+
 #status.success {
   animation: status 4s ease forwards;
   font-weight: bold;
@@ -151,63 +266,74 @@ body {
   font-size: 3em;
   top: 200px;
 }
+
 #status.error {
   color: #ec0909;
   animation: status 4s ease forwards;
   font-weight: bold;
 }
+
+.bg-form {
+  /* background: linear-gradient(#01afb866, #f602d510); */
+  background: linear-gradient(#04040466, #323232fe);
+}
+
+.inTouch:hover {
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+  background: #fff;
+}
+
+/* Form end */
+
 @keyframes status {
   0% {
     opacity: 1;
     pointer-events: all;
   }
+
   90% {
     opacity: 1;
     pointer-events: all;
   }
+
   100% {
     opacity: 0;
     pointer-events: none;
   }
 }
 
-.bg-form {
-  background: linear-gradient(#01afb866, #f602d510);
-}
-.inTouch:hover {
-  text-decoration: none;
-  border-bottom: 1px solid #fff;
-  background: #fff;
-}
 /* footer */
 .footer {
   margin-top: 6em;
 }
+
 .p-footer {
   margin-top: 6em;
 }
 
-/* skills animation in footer */
 .box {
   position: relative;
   width: 250px;
   transform-style: preserve-3d;
   animation: animate 20s linear infinite;
 }
+
 @keyframes animate {
   0% {
     transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
   }
+
   100% {
     transform: perspective(1000px) rotateY(360deg) rotateX(0deg);
   }
 }
+
 .box span {
   position: absolute;
   top: -200px;
   left: 0;
   width: 100%;
-  height: 50%;
   transform-origin: center;
   transform-style: preserve-3d;
   transform: rotateY(calc(var(--i) * 45deg)) translateZ(300px);
@@ -223,24 +349,28 @@ body {
   opacity: 0.8;
   height: 30vh;
 }
+
 @media screen and (max-width: 340px) {
   .box {
     position: relative;
-    width: 250px;
+    width: 100%;
     transform-style: preserve-3d;
     animation: animate 20s linear infinite;
   }
+
   @keyframes animate {
     0% {
       transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
     }
+
     100% {
       transform: perspective(1000px) rotateY(360deg) rotateX(0deg);
     }
   }
+
   .box span {
     position: absolute;
-    top: -200px;
+    top: -100px;
     left: 0;
     width: 100%;
     height: 0%;
@@ -250,26 +380,23 @@ body {
   }
 
   .box img {
-    /* transform:rotateX(180deg); */
+    transform: rotateX(180deg);
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: auto;
     object-fit: cover;
     opacity: 0.8;
-    height: 30vh;
   }
 }
 
-.box-footer {
-  width: 250px;
-}
 .footer {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 60vh;
 }
+
 .copy {
   color: #000;
   text-align: center;
