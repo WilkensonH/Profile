@@ -41,7 +41,6 @@ main .my-work .form-contact {
   height: 500px;
   overflow: hidden;
   overflow-y: scroll;
-  /* background: #373737; */
   background: linear-gradient(#04040466, #323232fe);
   border-radius: 10px;
 }
