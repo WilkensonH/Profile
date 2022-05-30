@@ -6,7 +6,7 @@ export const works = [{
     id: 4,
     url: 'https://wilkensonh.github.io/Guessing/',
     link: 'https://github.com/WilkensonH/Guessing.git',
-    description: 'number Guessing game with javaScript',
+    description: '•HTML •CSS •JavaScript',
     lang: "JavaScript",
 
   },
@@ -14,7 +14,7 @@ export const works = [{
     id: 3,
     url: 'https://wilkensonh.github.io/dicegame/',
     link: 'https://github.com/WilkensonH/dicegame.git',
-    description: 'dice game with javaScript ',
+    description: '• HTML • CSS • JavaScript',
     lang: "JavaScript",
 
   },
@@ -22,7 +22,7 @@ export const works = [{
     id: 2,
     url: 'https://bit.ly/3DKA81S',
     link: 'https://github.com/WilkensonH/commerce.git',
-    description: ' React,Material-UI, commerce.js ',
+    description: ' • React • Material-UI • commerce.js ',
     lang: "JavaScript",
 
   },
@@ -30,15 +30,8 @@ export const works = [{
     id: 1,
     url: 'https://wilkensonh.github.io/restaurant_app/',
     link: 'https://github.com/WilkensonH/restaurant_app/',
-    description: ' HTML Bootstrap',
+    description: '• HTML • Bootstrap',
     lang: "JavaScript",
 
   },
 ];
-
-// export const techUsed = [{
-//   id: 1,
-//   html:"HTML"
-//   css,
-//   js
-// }]

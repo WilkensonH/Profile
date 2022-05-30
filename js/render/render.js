@@ -1,17 +1,17 @@
- import {
-   works,
-   skills
- } from '../data/data.js';
+import {
+  works,
+  skills
+} from '../data/data.js';
 
- const technologies = document.querySelector('.technologies');
- const projects = document.querySelector('.allProjects');
+const technologies = document.querySelector('.technologies');
+const projects = document.querySelector('.allProjects');
 
- showProjects()
- showSkills()
+showProjects();
+showSkills();
 
- function showProjects() {
-   works.map(function (work) {
-     const html = `         
+function showProjects() {
+  works.map(function (work) {
+    const html = `         
       <div class="mx-auto ">
         <a href="${work.url}" target="_blank">
           <div class="card mr-1 p-hover" style="width: 18rem;">
@@ -31,15 +31,15 @@
         </a>
       </div>   
   `;
-     projects.insertAdjacentHTML('beforeend', html);
-   });
- }
+    projects.insertAdjacentHTML('beforeend', html);
+  });
+}
 
- function showSkills() {
-   skills.map(function (work) {
-     const html = `         
+function showSkills() {
+  skills.map(function (work) {
+    const html = `         
       <span>${work}</span>   
   `;
-     technologies.insertAdjacentHTML('beforeend', html);
-   });
- }
+    technologies.insertAdjacentHTML('beforeend', html);
+  });
+}

@@ -34,13 +34,28 @@ main .my-work .form-contact {
   width: 100%;
   height: 90vh;
 }
-.about-section {
-  height: 100vh;
+.allProjects-scroll {
+  width: auto;
+  height: 500px;
+  overflow: hidden;
+  overflow-y: scroll;
+  background: #373737;
+  border-radius: 10px;
+}
+.allProjects-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+.allProjects-scroll::-webkit-scrollbar-track {
+  box-shadow: insert 2px 0 5px #506ddf;
+}
+.allProjects-scroll::-webkit-scrollbar-thumb {
+  background: linear-gradient(#9d167e, #33f702);
+  border-radius: 10px;
 }
 .about-code {
   border-radius: 5px;
   height: 500px;
-  border-left: 2px solid green;
+  border-left: 2px solid #33f702;
   border-right: 2px solid #9d167e;
 }
 .about-img {
@@ -51,7 +66,6 @@ main .my-work .form-contact {
   animation-name: slide-animation;
   animation-duration: 2s;
   animation-iteration-count: 1;
-  display: fl;
   overflow: hidden;
 }
 @keyframes slide-animation {
