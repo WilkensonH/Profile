@@ -37,9 +37,11 @@ main .my-work .form-contact {
 .about-section {
   height: 100vh;
 }
-.about-img img {
-  width: auto;
-  height: 150px;
+.about {
+  border-radius: 5px;
+  height: 500px;
+  border-left: 2px solid green;
+  border-right: 2px solid #9d167e;
 }
 .about-img {
   display: flex;
