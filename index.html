@@ -115,109 +115,114 @@
       </section>
   </main>
   <!-- Main end -->
-  <div class="d-flex justify-content-center text-white about-section" id="about">
-    <section>
-      <h2 class="d-flex justify-content-center">About</h2>
-      <div class="mb-5 mt-5">
-        <p class="d-flex justify-content-center pl-4 pr-4">Coming from an automotive background, Im technically
-          inquisitve,
-          <br> I love solving problem, I have done some frontend and backend programing,
-          <br> but my main focus is on the frontend with html css javascript react
-          <br> always looking to learn new technologies
-        </p>
-      </div>
-      <div class="about">
-        <div class="about-sec">
-          <p>
-            <PRE class="text-white">
+  <!-- about start -->
+  <section>
+    <h2 class="d-flex justify-content-center text-white">About</h2>
+    <p class="d-flex justify-content-center pl-4 pr-4 text-white">
+      Coming from an automotive background, technically
+      inquisitve,
+      <br>problem solving, I have done some frontend and backend programing,
+      <br> but my main focus is on the frontend with html css javascript react
+      <br> always looking to learn new technologies
+    </p>
+  </section>
+  <section class="d-flex justify-content-center text-white about-section" id="about">
+    <div class="about-sec">
+      <p>
+        <PRE class="text-white pl-3 pr-3 ">
+            <div class=" about-code">
             <span class="text-success">public</span> static void <span class="text-primary">main</span>(String [] args){
-                Programer.<span class="text-success">getName()</span>;
-            }
-            <span class="text-success">public</span>  String <span class="text-success">programerName</span>(String <span class="text-warning">name</span>){
-                this.name =name;
-                <span class="text-primary">return</span> <span class="text-secondary">name</span>;
-            }
-            <span class="text-success">public</span>  String <span class="text-success">getName</span>(){                 
-                <span class="text-primary">return</span> <span class="text-secondary">name</span>;
-            }
-            <hr>
-            (<span class="text-success">function()</span>{
-              <span class="text-primary">const</span> wilkens = <span class="text-success">"programmer"</span>;
-              if(wilkens === programmer){
-                  getTheJob<span class="text-success">()</span>  
-              }else{
-                getTheJob<span class="text-success">(</span>train<span class="text-success">)</span>
+                  Programer.<span class="text-success">getName()</span>;
               }
+            <span class="text-success">public</span>  String <span class="text-success">programerName</span>(String <span class="text-warning">name</span>){
+                  this.name =name;
+                  <span class="text-primary">return</span> <span class="text-secondary">name</span>;
+              }
+            <span class="text-success">public</span>  String <span class="text-success">getName</span>(){                 
+                  <span class="text-primary">return</span> <span class="text-secondary">name</span>;
+              }
+              <hr>
+            (<span class="text-success">function()</span>{
+            <span class="text-primary">const</span> wilkens = <span class="text-success">"programmer"</span>;
+                if(wilkens === programmer){
+                    getTheJob<span class="text-success">()</span>  
+                }else{
+                  getTheJob<span class="text-success">(</span>train<span class="text-success">)</span>
+                }
             })()
-          </PRE>
-          </p>
-        </div>
-      </div>
-    </section>
-  </div>
+            </div>
+        </PRE>
+      </p>
+    </div>
+  </section>
+  <!-- about end  -->
   <!-- Projects start  -->
-  <div id="my-work">
-    <h2 class="text-white text-center pb-5 my-work"> Works</h2>
-    <section id="workSection">
+  <section id="my-work" class="mb-4">
+    <h2 class="text-white text-center p-5 my-work"> Works</h2>
+    <div id="work-section">
       <div class="container d-flex justify-content-center">
-        <div class="row mx-auto allProjects text-white work-sroll"></div>
+        <div class="row mx-auto allProjects text-white"></div>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
   <!-- Projects end  -->
 
   <!-- Contact start  -->
-  <div class="form-contact">
-    <h2 class="text-white font-italic text-center text-white" id="getInTouch">Get In Touch</h2>
-    <div class="container d-flex justify-content-center mb-2">
-      <a href="https://www.linkedin.com/in/wilkenson-hilarion/" target="_blank"
-        class="btn-border-bottom text-hover text-center font-weight-bold shadow btn btn-dark text-white ml-2 mr-2">
-        <i class="bi bi-linkedin text-primary"></i> LnkedIn
-      </a>
-    </div>
-    <section id="contact" class="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col bg-form ml-c">
-            <form id="form" class="form" action="https://formspree.io/f/xvodlwkk" method="POST">
-              <div class="form-group">
-                <label for="name" name="name" id="name" class="c-name">Name</label>
-                <input type="text" name="name" id="name" class="c-input form-control bg-transparent border-top-0 border-bottom border-left-0 
+  <section id="getInTouch">
+    <div class="form-contact">
+      <section>
+        <h2 class="text-white font-italic text-center text-white">Get In Touch</h2>
+        <div class="container d-flex justify-content-center mb-2">
+          <a href="https://www.linkedin.com/in/wilkenson-hilarion/" target="_blank"
+            class="btn-border-bottom text-hover text-center font-weight-bold shadow btn btn-dark text-white ml-2 mr-2">
+            <i class="bi bi-linkedin text-primary"></i> LnkedIn
+          </a>
+        </div>
+      </section>
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="row">
+            <div class="col bg-form ml-c">
+              <form id="form" class="form" action="https://formspree.io/f/xvodlwkk" method="POST">
+                <div class="form-group">
+                  <label for="name" name="name" id="name" class="c-name">Name</label>
+                  <input type="text" name="name" id="name" class="c-input form-control bg-transparent border-top-0 border-bottom border-left-0 
                   border-right-0 border-bottom border-primary text-white font-weight-bold" placeholder="Enter name "
-                  id="name" aria-describedby="emailHelp" />
-              </div>
-              <div class="form-group">
-                <label for="email" class="c-email">E-mail</label>
-                <input required type="email" name="email" emailTo:hwilkenson@ymail.com class="form-control bg-transparent border-top-0
+                    id="name" aria-describedby="emailHelp" required />
+                </div>
+                <div class="form-group">
+                  <label for="email" class="c-email">E-mail</label>
+                  <input required type="email" name="email" emailTo:hwilkenson@ymail.com class="form-control bg-transparent border-top-0
                  border-bottom border-left-0 border-right-0 font-weight-bold
                    border-bottom border-primary text-white" placeholder="Email address" id="email"
-                  aria-describedby="emailHelp" />
-              </div>
-              <div class="form-group">
-                <label for="phone" class="c-phone">Phone</label>
-                <input type="tel" name="phone" class="form-control bg-transparent border-top-0 border-bottom border-left-0 
+                    aria-describedby="emailHelp" />
+                </div>
+                <div class="form-group">
+                  <label for="phone" class="c-phone">Phone</label>
+                  <input type="tel" name="phone" class="form-control bg-transparent border-top-0 border-bottom border-left-0 
                   border-right-0 border-bottom border-primary text-white font-weight-bold" placeholder="123-456-7890"
-                  id="phone" aria-describedby="emailHelp" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
-              </div>
-              <div class="form-group textarea">
-                <label for="email" class="c-textarea">Message</label>
-                <textarea class="form-control position-relative bg-transparent border-left-0 border-right-0
+                    id="phone" aria-describedby="emailHelp" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+                </div>
+                <div class="form-group textarea">
+                  <label for="email" class="c-textarea">Message</label>
+                  <textarea class="form-control position-relative bg-transparent border-left-0 border-right-0
                    border-bottom border-primary border-top-0 border-bottom font-weight-bold text-white" name="text"
-                  id="" cols="" rows="4" placeholder="write message here"></textarea>
-              </div>
-              <div class="btn d-block justify-item-center">
-                <button id="form-status" emailTo:hwilkenson@ymail.com type="submit" name="submit"
-                  class="btn btn-c btn-border-bottom text-center text-hover font-weight-bold shadow btn-dark bg-dark  mb-4 text-white justify-self-center">
-                  Submit
-                </button>
-              </div>
-            </form>
+                    id="" cols="" rows="4" placeholder="write message here" required></textarea>
+                </div>
+                <div class="btn d-block justify-item-center">
+                  <button id="form-status" emailTo:hwilkenson@ymail.com type="submit" name="submit"
+                    class="btn btn-c btn-border-bottom text-center text-hover font-weight-bold shadow btn-dark bg-dark  mb-4 text-white justify-self-center">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div id="status"></div>
           </div>
-          <div id="status"></div>
         </div>
-      </div>
-    </section>
-  </div>
+      </section>
+    </div>
+  </section>
   <!-- Contact end  -->
   <!-- Footer start  -->
   <Section class="mt-5 mb-2">
