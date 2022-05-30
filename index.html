@@ -15,7 +15,7 @@
 
 <body>
   <!-- Header start -->
-  <section class=" sticky-top" id="headerStyles">
+  <section class=" sticky-top header-styles">
     <header class="container">
       <nav class="navbar navbar-expand-lg navbar-dark mx-auto">
         <div>
@@ -106,7 +106,7 @@
           <div id="resume">
             <div class="side-resume">
               <a href="WilkensonResume.PDF" target="_blank"
-                class="btn-border-bottom  text-hover text-white text-center font-weight-bold shadow btn  btn-dark text-white">
+                class="btn-border-bottom text-hover text-white text-center font-weight-bold shadow btn btn-dark text-white">
                 <i class="bi bi-file-earmark-person text-primary"></i> Resume
               </a>
             </div>
@@ -127,37 +127,32 @@
     </p>
   </section>
   <section class="d-flex justify-content-center text-white" id="about">
-    <div class="about-sec">
+    <div>
       <p>
-        <PRE class="text-white pl-3 pr-3 ">
-            <div class=" about-code">
-            <span class="text-success">public</span> static void <span class="text-primary">main</span>(String [] args){
-                  Programer.<span class="text-success">getName()</span>;
-              }
-            <span class="text-success">public</span>  String <span class="text-success">programerName</span>(String <span class="text-warning">name</span>){
-                  this.name =name;
-                  <span class="text-primary">return</span> <span class="text-secondary">name</span>;
-              }
-            <span class="text-success">public</span>  String <span class="text-success">getName</span>(){                 
-                  <span class="text-primary">return</span> <span class="text-secondary">name</span>;
-              }
-              <hr>
-            (<span class="text-success">function()</span>{
-            <span class="text-primary">const</span> wilkens = <span class="text-success">"programmer"</span>;
-                if(wilkens === programmer){
-                    getTheJob<span class="text-success">()</span>  
-                }else{
-                  getTheJob<span class="text-success">(</span>train<span class="text-success">)</span>
-                }
-            })()
-            </div>
-        </PRE>
+        <PRE class="text-white about-code">
+      <div class="">
+      <span class="text-success">public</span> static void <span class="text-primary">main</span>(String [] args){
+        Programmer.<span class="text-success">getName()</span>;
+      }     
+      class Programmer{
+        String name;
+
+      <span class="text-success">public</span> String <span class="text-success">programmerName</span>(String <span class="text-warning">name</span>){
+          this.name =name;
+          <span class="text-primary">return</span> <span class="text-secondary">name</span>;
+        }
+       <span class="text-success">public</span>  String <span class="text-success">getName</span>(){                 
+          <span class="text-primary">return</span> <span class="text-secondary">name</span>;
+        }                 
+      }           
+      </div>
+      </PRE>
       </p>
     </div>
   </section>
   <!-- about end  -->
   <!-- Projects start  -->
-  <section id="my-work" class="mb-5">
+  <section id="my-work" class="mb-5 container">
     <h2 class="text-white text-center p-5 my-work"> Works</h2>
     <div id="work-section">
       <div class="container d-flex justify-content-center allProjects-scroll ">
@@ -168,10 +163,10 @@
   <!-- Projects end  -->
 
   <!-- Contact start  -->
-  <section id="getInTouch">
+  <section class="container" id="getInTouch">
     <div class="form-contact">
       <section>
-        <h2 class="text-white font-italic text-center text-white">Get In Touch</h2>
+        <h2 class="text-white font-italic text-center text-white p-5">Get In Touch</h2>
         <div class="container d-flex justify-content-center mb-2">
           <a href="https://www.linkedin.com/in/wilkenson-hilarion/" target="_blank"
             class="btn-border-bottom text-hover text-center font-weight-bold shadow btn btn-dark text-white ml-2 mr-2">

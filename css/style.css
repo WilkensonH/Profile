@@ -18,15 +18,16 @@ body {
 }
 .side-resume {
   position: fixed;
-  right: -25px;
+  left: -35px;
   z-index: 100;
-  transform: rotate(90deg);
+  transform: rotate(270deg);
 }
 /* Header start */
-#headerStyles {
-  background-color: #202020;
+.header-styles {
+  background-color: #373737;
   /* top: 0; */
 }
+
 /* Header end */
 
 /* main start */
@@ -39,7 +40,8 @@ main .my-work .form-contact {
   height: 500px;
   overflow: hidden;
   overflow-y: scroll;
-  background: #373737;
+  /* background: #373737; */
+  background: linear-gradient(#04040466, #323232fe);
   border-radius: 10px;
 }
 .allProjects-scroll::-webkit-scrollbar {
@@ -49,33 +51,16 @@ main .my-work .form-contact {
   box-shadow: insert 2px 0 5px #506ddf;
 }
 .allProjects-scroll::-webkit-scrollbar-thumb {
-  background: linear-gradient(#9d167e, #33f702);
+  background: linear-gradient(#ffffff, #33f702);
   border-radius: 10px;
 }
 .about-code {
   border-radius: 5px;
-  height: 500px;
+  height: 450px;
   border-left: 2px solid #33f702;
   border-right: 2px solid #9d167e;
 }
-.about-img {
-  display: flex;
-  overflow: hidden;
-}
-.about-img img {
-  animation-name: slide-animation;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-  overflow: hidden;
-}
-@keyframes slide-animation {
-  from {
-    margin-left: -430px;
-  }
-  to {
-    margin-right: 0%;
-  }
-}
+
 /* hand waving  */
 .wave {
   animation-name: wave-animation;
@@ -292,6 +277,7 @@ main .my-work .form-contact {
 .bg-form {
   /* background: linear-gradient(#01afb866, #f602d510); */
   background: linear-gradient(#04040466, #323232fe);
+  border-radius: 10px;
 }
 
 .inTouch:hover {
