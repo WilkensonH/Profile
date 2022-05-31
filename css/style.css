@@ -230,13 +230,13 @@ section {
   width: 100%;
   object-fit: cover;
   opacity: 0.8;
-  height: 30vh;
+  height: 25vh;
 }
 
 @media screen and (max-width: 340px) {
   .box {
     position: relative;
-    width: 100%;
+    width: 100px;
     transform-style: preserve-3d;
     animation: animate 20s linear infinite;
   }
@@ -255,21 +255,27 @@ section {
     position: absolute;
     top: -100px;
     left: 0;
-    width: 100%;
-    height: 0%;
+    width: 250%;
     transform-origin: center;
     transform-style: preserve-3d;
     transform: rotateY(calc(var(--i) * 45deg)) translateZ(300px);
   }
 
   .box img {
-    transform: rotateX(180deg);
+    /* transform:rotateX(180deg); */
     position: absolute;
     top: 0;
     left: 0;
-    width: auto;
+    width: 100%;
     object-fit: cover;
     opacity: 0.8;
+    height: 25vh;
+  }
+  .skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
   }
 }
 
