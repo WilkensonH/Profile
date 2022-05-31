@@ -11,23 +11,19 @@ a {
 body {
   background-color: #202020;
   height: 100vh;
-  /* overflow: hidden; */
 }
 
 .wrapper {
   width: 100%;
   height: 100vh;
-  /* css smooth scroll */
-  /* overflow-y: scroll; */
-  /*scroll-behavior: smooth;
-  scroll-snap-type: y mandatory; */
 }
 .header-styles {
   position: fixed;
   top: 0;
   z-index: 1;
-  background: #000;
+  background: linear-gradient(#040404, #323232fe);
   width: 100%;
+  height: 50px;
 }
 
 section {
@@ -36,7 +32,6 @@ section {
   height: 100vh;
   justify-content: center;
   align-items: center;
-  /* scroll-snap-align: center; */
 }
 
 /* project / work */
@@ -128,27 +123,6 @@ section {
 }
 /* end */
 
-/* text-typing */
-.typing {
-  letter-spacing: 1em;
-  font-size: 25px;
-  color: #fff;
-  overflow: hidden;
-  white-space: nowrap;
-  margin: 0 auto;
-  animation: typing 5.1s steps(50, end) infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 100%;
-  }
-}
-
 /* Form start */
 .c-name,
 .c-email,
@@ -232,7 +206,6 @@ section {
 }
 
 .box img {
-  /* transform:rotateX(180deg); */
   position: absolute;
   top: 0;
   left: 0;
@@ -271,7 +244,6 @@ section {
   }
 
   .box img {
-    /* transform:rotateX(180deg); */
     position: absolute;
     top: 0;
     left: 0;
