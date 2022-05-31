@@ -1,6 +1,5 @@
 // projects and skills informaion
 //
-export const skills = ['HTML', 'CSS', 'JavaScript', 'React', 'React-native']
 
 export const works = [{
     id: 4,

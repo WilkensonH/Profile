@@ -1,13 +1,10 @@
 import {
-  works,
-  skills
+  works
 } from '../data/data.js';
 
-const technologies = document.querySelector('.technologies');
 const projects = document.querySelector('.allProjects');
 
 showProjects();
-showSkills();
 
 function showProjects() {
   works.map(function (work) {
@@ -32,14 +29,5 @@ function showProjects() {
       </div>   
   `;
     projects.insertAdjacentHTML('beforeend', html);
-  });
-}
-
-function showSkills() {
-  skills.map(function (work) {
-    const html = `         
-      <span>${work}</span>   
-  `;
-    technologies.insertAdjacentHTML('beforeend', html);
   });
 }
