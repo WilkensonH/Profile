@@ -253,7 +253,7 @@ section {
 
   .box span {
     position: absolute;
-    top: -100px;
+    top: -90px;
     left: 0;
     width: 250%;
     transform-origin: center;
