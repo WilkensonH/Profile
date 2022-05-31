@@ -10,32 +10,32 @@ a {
 
 body {
   background-color: #202020;
-}
-#resume {
-  position: relative;
-  /* top: 10px;
-  right: 10px; */
-}
-.side-resume {
-  position: fixed;
-  top: 360px;
-  left: -35px;
-  z-index: 100;
-  transform: rotate(270deg);
-}
-/* Header start */
-.header-styles {
-  background-color: #373737;
-  /* top: 0; */
+  height: 100vh;
+  overflow: hidden;
 }
 
-/* Header end */
-
-/* main start */
-main .my-work .form-contact {
+.wrapper {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
+  /* css smooth scroll */
+  overflow-y: scroll;
 }
+.header-styles {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background: #000;
+}
+
+section {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+/* project / work */
 .allProjects-scroll {
   width: auto;
   height: 500px;
@@ -43,9 +43,10 @@ main .my-work .form-contact {
   overflow-y: scroll;
   background: linear-gradient(#04040466, #323232fe);
   border-radius: 10px;
+  cursor: pointer;
 }
 .allProjects-scroll::-webkit-scrollbar {
-  width: 5px;
+  width: 10px;
 }
 .allProjects-scroll::-webkit-scrollbar-track {
   box-shadow: insert 2px 0 5px #506ddf;
@@ -61,7 +62,18 @@ main .my-work .form-contact {
   border-right: 2px solid #9d167e;
 }
 
-/* hand waving  */
+.p-hover:hover {
+  border: none;
+  box-shadow: 1.5px 1.5px 4px 1.5px #33f702;
+  background: linear-gradient(#ffffff, #acf3be);
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: ease-in-out 0.2s;
+  z-index: 100;
+}
+
+/* end */
+
+/* hand waving / intro */
 .wave {
   animation-name: wave-animation;
   animation-duration: 2.5s;
@@ -95,13 +107,9 @@ main .my-work .form-contact {
     transform: rotate(0deg);
   }
 }
-#myInfo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
-/* social button  */
+/* end  */
+
+/* button  */
 .btn-border-bottom {
   border-bottom: 2px solid #33f702;
 }
@@ -109,67 +117,9 @@ main .my-work .form-contact {
 .btn-border-bottom:hover {
   border-bottom: 2px solid #fff;
 }
+/* end */
 
-/* man end  */
-/* work */
-#workSection {
-  height: 100vh;
-}
-/* work end  */
-
-/* main end */
-
-/* contact */
-#contact {
-  height: 70vh;
-}
-/* contact end   */
-.card-project:hover,
-.card-body:hover {
-  display: block;
-}
-
-/* nav header */
-.nav-active {
-  border-bottom: solid 2px #00000080;
-}
-
-.nav-active:hover {
-  border-bottom: solid 2px #22222280;
-}
-
-.bg-dark {
-  opacity: 1;
-  margin: auto;
-}
-
-.text-stroke {
-  -webkit-text-stroke-width: 1.5px;
-  -webkit-text-stroke-color: #ffffff;
-  text-shadow: 1px 1px 1px #000000;
-}
-
-.text-strk {
-  color: #000000;
-}
-
-/* home  */
-.projects {
-  margin-top: 1%;
-  position: absolute;
-  top: 30%;
-  left: 30%;
-}
-
-.text-black {
-  color: #000;
-}
-
-/*  about*/
-.about-text {
-  font-size: 20px;
-}
-
+/* text-typing */
 .typing {
   letter-spacing: 1em;
   font-size: 25px;
@@ -178,11 +128,6 @@ main .my-work .form-contact {
   white-space: nowrap;
   margin: 0 auto;
   animation: typing 5.1s steps(50, end) infinite;
-}
-
-.skills {
-  padding: auto;
-  padding-top: 2px;
 }
 
 @keyframes typing {
@@ -195,56 +140,6 @@ main .my-work .form-contact {
   }
 }
 
-.container-file {
-  position: relative;
-  text-align: center;
-}
-
-.ml-file {
-  margin-left: 25%;
-}
-.form-text-color {
-  color: #000;
-}
-.p-hover:hover {
-  border: none;
-  box-shadow: 1px 1px 5px 1px #ec1f1f;
-  background: linear-gradient(#ec1f1f, #acf3be, #bfacf3);
-  transform: translate(-10px);
-  transform: translateY(-10px);
-  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-  transition: ease-in-out 0.2s;
-  z-index: 100;
-}
-
-.file-folder:hover {
-  transform: translateX(-20px);
-  transform: translateY(-10px);
-  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-  transition: ease-in-out 0.4s;
-  z-index: 100;
-}
-
-.file-folder .text-hover:hover {
-  transform: translateX(-20px);
-  transition: ease-in-out 0.2s;
-}
-
-.about-project:hover {
-  position: relative;
-  top: 20px;
-  z-index: 2;
-}
-
-.about-project:hover {
-  background: #262626;
-  color: #ffffff;
-}
-
-.project__fotter {
-  color: #fff;
-}
-
 /* Form start */
 .c-name,
 .c-email,
@@ -254,6 +149,8 @@ main .my-work .form-contact {
   font-size: 20px;
   color: #fff;
 }
+
+/* contact form / message */
 
 #status {
   width: 100%;
@@ -275,18 +172,11 @@ main .my-work .form-contact {
 }
 
 .bg-form {
-  /* background: linear-gradient(#01afb866, #f602d510); */
   background: linear-gradient(#04040466, #323232fe);
   border-radius: 10px;
 }
 
-.inTouch:hover {
-  text-decoration: none;
-  border-bottom: 1px solid #fff;
-  background: #fff;
-}
-
-/* Form end */
+/* end */
 
 @keyframes status {
   0% {
@@ -304,16 +194,7 @@ main .my-work .form-contact {
     pointer-events: none;
   }
 }
-
-/* footer */
-.footer {
-  margin-top: 6em;
-}
-
-.p-footer {
-  margin-top: 6em;
-}
-
+/*  main info / skills */
 .box {
   position: relative;
   width: 250px;
@@ -333,7 +214,7 @@ main .my-work .form-contact {
 
 .box span {
   position: absolute;
-  top: -200px;
+  top: -100px;
   left: 0;
   width: 100%;
   transform-origin: center;
@@ -392,15 +273,10 @@ main .my-work .form-contact {
   }
 }
 
-.footer {
+.skills {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 60vh;
+  min-height: 50vh;
 }
-
-.copy {
-  color: #000;
-  text-align: center;
-  padding-bottom: 20px;
-}
+/* end  */
