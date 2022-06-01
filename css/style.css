@@ -22,8 +22,6 @@ body {
   top: 0;
   z-index: 1;
   background: linear-gradient(#040404, #323232fe);
-  width: 100%;
-  height: 50px;
 }
 
 section {
@@ -39,6 +37,10 @@ section {
   transform: rotate(270deg);
   position: relative;
   left: -80px;
+}
+.allProjects img {
+  width: 100%;
+  height: 20vh;
 }
 .allProjects-scroll {
   width: auto;
@@ -123,7 +125,7 @@ section {
 }
 /* end */
 
-/* Form start */
+/* contact input */
 .c-name,
 .c-email,
 .c-phone,
