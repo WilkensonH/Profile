@@ -66,6 +66,9 @@ section {
   border-left: 2px solid #33f702;
   border-right: 2px solid #9d167e;
 }
+.about-text {
+  width: 50%;
+}
 
 .p-hover:hover {
   border: none;
