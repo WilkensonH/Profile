@@ -21,7 +21,7 @@ body {
 }
 .header-link:hover {
   color: #10f010;
-  border-bottom: solid #fff 1px;
+  border-bottom: solid #fff 2px;
 }
 section {
   display: flex;
