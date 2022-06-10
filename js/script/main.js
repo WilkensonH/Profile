@@ -13,7 +13,7 @@ $('.navbar a').on('click', function (e) {
 // add header nav background n scroll
 $(function () {
     $(window).on("scroll", function () {
-        if ($(window).scrollTop() > 900) {
+        if ($(window).scrollTop() > 60) {
             $(".header").addClass("header-styles");
         } else {
             //remove the background property so it comes transparent again (defined in your css)

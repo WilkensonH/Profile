@@ -1,9 +1,8 @@
 // projects and skills informaion
-//
 
 export const works = [{
     id: 4,
-    url: 'https://wilkensonh.github.io/Guessing/', // live vie
+    url: 'https://wilkensonh.github.io/Guessing/', // live view
     link: 'https://github.com/WilkensonH/Guessing.git', // github repo
     description: '•HTML •CSS •JavaScript',
     lang: "JavaScript",
@@ -19,9 +18,9 @@ export const works = [{
   },
   {
     id: 2,
-    url: 'https://bit.ly/3DKA81S',
-    link: 'https://github.com/WilkensonH/commerce.git', //live view
-    description: ' •React •stripejs • MUI ', //github repo
+    url: 'https://bit.ly/3DKA81S', //live view
+    link: 'https://github.com/WilkensonH/commerce.git', //github repo
+    description: ' •React •stripejs • MUI ',
     lang: "JavaScript",
 
   },

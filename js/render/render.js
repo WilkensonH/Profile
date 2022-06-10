@@ -9,7 +9,7 @@ showProjects();
 function showProjects() {
   works.map(function (work) {
     const html = `         
-      <div class="mx-auto ">
+      <div class="mx-auto">
         <a href="${work.url}" target="_blank">
           <div class="card mr-1 p-hover" style="width: 15rem;">
             <img src="img/project${work.id}.png" class="card-img-top" alt="project"/>
