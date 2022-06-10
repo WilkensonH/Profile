@@ -10,7 +10,7 @@ $('.navbar a').on('click', function (e) {
     }
 })
 
-// add header nav background n scroll
+// add header nav background on scroll
 $(function () {
     $(window).on("scroll", function () {
         if ($(window).scrollTop() > 60) {
