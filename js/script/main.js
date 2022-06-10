@@ -1,6 +1,6 @@
-// smooth scroll 
-$('.navbar a').on('click', function (e) {
+// smooth scroll  
 
+$('.navbar a').on('click', function (e) {
     if (this.hash !== "") {
         e.preventDefault();
         const hash = this.hash;
@@ -13,7 +13,7 @@ $('.navbar a').on('click', function (e) {
 // add header nav background n scroll
 $(function () {
     $(window).on("scroll", function () {
-        if ($(window).scrollTop() > 700) {
+        if ($(window).scrollTop() > 900) {
             $(".header").addClass("header-styles");
         } else {
             //remove the background property so it comes transparent again (defined in your css)
