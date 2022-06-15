@@ -9,7 +9,6 @@ $('.navbar a').on('click', function (e) {
         }, 800)
     }
 })
-
 // add header nav background on scroll
 $(function () {
     $(window).on("scroll", function () {

@@ -7,7 +7,8 @@ export const works = [{
     stack: '• HTML • CSS • JavaScript <hr>',
     description: `Number guessing game, build in vanilla js
     it tracks the player's score and highest score start playing by entering a
-     number in the box and click check  `,
+     number in the box and click check  
+     `,
     lang: "JavaScript",
 
   },
@@ -18,7 +19,8 @@ export const works = [{
     stack: '• HTML • CSS • JavaScript<hr>',
     description: `This two players dice game is built in vanilla js 
     it can only be played in one computer. 100 points win the game
-    rolling a 1 cause player to lose all points`,
+    rolling a 1 cause player to lose all points
+    `,
     lang: "JavaScript",
 
   },
@@ -28,7 +30,8 @@ export const works = [{
     link: 'https://github.com/WilkensonH/commerce.git', //github repo
     stack: '•React •stripejs • MUI<hr>',
     description: `Ecom shopping cart, build in react js it's 
-    integrated with commercejs to manage content and stripejs for payment processing`,
+    integrated with commercejs to manage content and stripejs for payment processing
+    `,
     lang: "JavaScript",
 
   },
