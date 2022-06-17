@@ -188,7 +188,9 @@ section {
   animation: status 4s ease forwards;
   font-weight: bold;
 }
-
+#status hr {
+  background: white;
+}
 .bg-form {
   background: linear-gradient(#04040466, #323232fe);
   border-radius: 10px;

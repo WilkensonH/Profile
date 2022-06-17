@@ -13,13 +13,13 @@ async function handleSubmit(event) {
       },
     })
     .then(response => {
-      status.innerHTML = 'Thank you ! <br>for contacting me!';
+      status.innerHTML = 'Thank you 🥳 for contacting me ! <br> I will get back to you ASAP <hr>';
       status.classList.add('success');
       form.reset();
     })
     .catch(error => {
       console.log(error)
-      status.innerHTML = 'Oops! There was a problem submitting your form';
+      status.innerHTML = 'Oops 😔 ! There was a problem submitting your form';
       status.classList.add('error');
     });
 }
