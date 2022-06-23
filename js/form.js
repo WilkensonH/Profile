@@ -1,4 +1,5 @@
 const form = document.getElementById('form');
+const hideForm = document.getElementsByClassName('hide_contact')
 
 async function handleSubmit(event) {
   event.preventDefault();
@@ -13,7 +14,7 @@ async function handleSubmit(event) {
       },
     })
     .then(response => {
-      status.innerHTML = 'Thank you 🥳 for contacting me ! <br> I will get back to you ASAP <hr>';
+      status.innerHTML = 'Thank you 🥳 for contacting me ! I will reply ASAP <hr>';
       status.classList.add('success');
       form.reset();
     })
@@ -24,3 +25,4 @@ async function handleSubmit(event) {
     });
 }
 form.addEventListener('submit', handleSubmit);
+console.log(hideForm);

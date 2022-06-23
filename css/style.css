@@ -3,7 +3,9 @@
   padding: 0;
   margin: 0;
 }
-
+.hide_form {
+  visibility: hidden;
+}
 body {
   animation-name: bg-color;
   background-color: #202020;
