@@ -1,6 +1,6 @@
 // smooth scroll  
 
-$('.navbar a').on('click', function (e) {
+$('.navbar a , .link a').on('click', function (e) {
     if (this.hash !== "") {
         e.preventDefault();
         const hash = this.hash;
@@ -9,6 +9,7 @@ $('.navbar a').on('click', function (e) {
         }, 800)
     }
 })
+
 // add header nav background on scroll
 $(function () {
     $(window).on("scroll", function () {
