@@ -141,31 +141,7 @@ section {
   }
 }
 /* end  */
-.code-wrapper {
-  position: relative;
-}
-.idea {
-  position: absolute;
-  top: 300px;
-  font-size: 100px;
-}
-.idea-light {
-  border-radius: 100%;
-  position: absolute;
-  background-color: rgb(255, 255, 255);
-  width: 60px;
-  height: 60px;
-  bottom: 65px;
-  left: 20px;
-  animation: idea-light 2.5s infinte;
-  filter: brightness(1001%);
-  /* opacity: 0; */
-}
-@keyframes idea-light {
-  0% {
-    opacity: 0;
-  }
-}
+
 .slide-right {
   animation: slide-right 1.5s ease-in-out 1;
 }
