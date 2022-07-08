@@ -103,6 +103,15 @@ section {
   background: linear-gradient(#ffffff, #33f702);
   border-radius: 10px;
 }
+
+/* button  */
+.btn-border-bottom {
+  border-bottom: 2px solid #33f702;
+}
+.btn-border-bottom:hover {
+  border-bottom: 2px solid #fff;
+}
+/* about  */
 .about-code {
   border-radius: 5px;
   height: 450px;
@@ -113,6 +122,48 @@ section {
   width: 50%;
 }
 
+.rotate {
+  animation-name: rotate;
+  animation-duration: 4.5s;
+  animation-iteration-count: 1;
+  transform-origin: center;
+  display: inline-block;
+}
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(185deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+/* end  */
+
+.slide-right {
+  animation: slide-right 1.5s ease-in-out 1;
+}
+@keyframes slide-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.slide-left {
+  animation: slide-left 2.5s ease-in-out 1;
+}
+@keyframes slide-left {
+  0% {
+    transform: translateX(25%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
 .p-hover:hover {
   border: none;
   box-shadow: 1.5px 1.5px 4px 1.5px #33f702;
@@ -316,5 +367,3 @@ section {
   min-height: 50vh;
 }
 /* end  */
-
-/* flying birds  */
