@@ -154,7 +154,7 @@ section {
   }
 } */
 .slide-left {
-  animation: slide-left 1.5s ease-in-out 1;
+  animation: slide-left .5s ease-in-out 1;
 }
 @keyframes slide-left {
   0% {
