@@ -112,12 +112,12 @@ section {
   border-bottom: 2px solid #fff;
 }
 /* about  */
-.about-code {
+/* .about-code {
   border-radius: 5px;
   height: 450px;
   border-left: 2px solid #33f702;
   border-right: 2px solid #9d167e;
-}
+} */
 .about-text {
   width: 50%;
 }
