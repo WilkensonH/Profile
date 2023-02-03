@@ -129,7 +129,7 @@ section {
   transform-origin: center;
   display: inline-block;
 }
-@keyframes rotate {
+/* @keyframes rotate {
   0% {
     transform: rotateY(0deg);
   }
@@ -139,20 +139,20 @@ section {
   100% {
     transform: rotateY(360deg);
   }
-}
+} */
 /* end  */
 
 .slide-right {
   animation: slide-right 1.5s ease-in-out 1;
 }
-@keyframes slide-right {
+/* @keyframes slide-right {
   0% {
     transform: translateX(-50%);
   }
   100% {
     transform: translateX(0%);
   }
-}
+} */
 .slide-left {
   animation: slide-left 2.5s ease-in-out 1;
 }
