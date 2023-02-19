@@ -24,5 +24,8 @@ async function handleSubmit(event) {
       status.classList.add('error');
     });
 }
+
 form.addEventListener('submit', handleSubmit);
-console.log(hideForm);
+
+ 
+ 
